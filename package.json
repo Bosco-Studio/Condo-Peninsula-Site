@@ -1,0 +1,10 @@
+{
+  "name": "CondoPeninsulaSite",
+  "version": "0.0.1",
+  "description": "Site for Condo Peninsula",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Javier Escalante"
+}
