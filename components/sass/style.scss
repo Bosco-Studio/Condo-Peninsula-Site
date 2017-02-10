@@ -3,6 +3,10 @@
  
 //Compass imports
 @import "compass";
+@import "compass/reset";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
  
 //Core partials
 @import "variables";
