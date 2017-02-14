@@ -12,9 +12,10 @@
 	#main-head-container {
 		padding: 0.5em 0px;
 	}
-	.sIcons {
+	.topBar {
 		background-color: $lightBlue;
 		padding: 3px;
+		padding-top: 6px;
 		color: #fff;
 		ul {
 			padding-right: 12px;
@@ -57,15 +58,8 @@
 			}
 		}
 	}
-	.navbar-toggle {
-		.fa {
-			font-size: 1.5em;
-			color: $lightBlue;
-			transition: all 0.5s;
-			&:hover {
-				color: $pinkSand;
-			}
-		}
+	#main-menu-toggler {
+		@include animBoostrapMenuBttn($mainNavBreakPoint, $lightBlue);
 		@media (max-width: $mainNavBreakPoint) {
 			margin-right: 0px;
 		}
