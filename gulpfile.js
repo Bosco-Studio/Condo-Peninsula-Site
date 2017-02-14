@@ -27,7 +27,8 @@ if (env ==='development') {
 };
 
 jsSources = [
-	'components/scripts/init.js'
+	'components/scripts/init.js',
+	'components/scripts/initHeadroom.js'
 	]; //Array of locations of js script files to unify(concat).
 
 sassSources = ['components/sass/style.sass']; //Array of locations of sass files to process(compass).
@@ -51,7 +52,7 @@ gulp.task('connect', function() {
 gulp.task('js', function() {
 	gulp.src(jsSources) //location of js scripts
 		.pipe(concat('script.js')) //unify the scripts
-		.pipe(browserify()) //add libraries and unify
+		.pipe(browserify({insertGlobals : true})) //add libraries and unify
 		.pipe(gulpif(env === 'production', uglify()))
 		.pipe(gulp.dest(outputDir + 'js')) //export unify js to location.
 		.pipe(connect.reload()) //reload the server with the connect task

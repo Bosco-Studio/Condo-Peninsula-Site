@@ -1,11 +1,13 @@
 // _variables.scss
 // =================
 // importing gooogle fonts
-@import "http://fonts.googleapis.com/css?family=Patua+One|Inika|Lato";
+@import "http://fonts.googleapis.com/css?family=Patua+One|cabin|Lato";
 //colors
 $lightPink        : #F9F6F2;
 $pinkSand         : #d0ad8a;
 $lightBlue		  : #79b3c4;
 //fonts
-$headFont : 'Lato', sans-serif;
-$bodyFont : 'Inika', serif;
+$headFont 		  : 'Lato', sans-serif;
+$bodyFont 		  : 'cabin', serif;
+//breakPoints
+$mainNavBreakPoint : 993px;
