@@ -86,5 +86,29 @@
 // Landing
 // ============
 #landing {
-	@include backImage('../images/backgrounds/landing/bg9.jpg');
+	@include parlxImage('../images/backgrounds/landing/bg9.jpg');
+	#landing-copy {
+		position: absolute;
+    	top: 30%;
+    	left: 10%;
+    	width: 30%;
+    	min-width: 200px;
+    	padding: 2% 1%;
+    	background-color: rgba($lightBlue, 0.85);
+    	color: #fff;
+    	h1 {
+    		margin-bottom: 0.5em;
+    	}
+    	p {
+    		font-size: 1.1em;
+    	}
+	}
+	#keep-scrolling {
+		position: absolute;
+		top: 81%;
+		left: 50%;
+		font-size: 3.5em;
+		color: $lightPink;
+		-webkit-animation: scrolls 1.2s ease-out infinite;
+	}	
 }

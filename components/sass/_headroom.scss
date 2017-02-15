@@ -17,12 +17,14 @@
 
 .slideUp {
     -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     transform: translateY(-100%);
 }
 
 .slideDown {
     -webkit-transform: translateY(-3em);
+    -moz-transform: translateY(-3em);
     -ms-transform: translateY(-3em);
     transform: translateY(-3em);
 }

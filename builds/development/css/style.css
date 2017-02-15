@@ -7456,6 +7456,22 @@ h1, h2, h3, h4, h5, h6 {
     display: block !important;
   }
 }
+@-webkit-keyframes scrolls {
+  0% {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 #main-header {
   position: fixed;
   width: 100%;
@@ -7515,6 +7531,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #main-header #main-menu-toggler {
   -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
   opacity: 0;
   width: 15px;
@@ -7539,6 +7556,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #79b3c4;
   margin-bottom: 3px;
   -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
   transition: all 0.3s;
   backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
@@ -7586,15 +7604,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #landing {
-  background: url("../images/backgrounds/landing/bg9.jpg") no-repeat 50% 20%;
+  background: url("../images/backgrounds/landing/bg9.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+@media only screen and (max-device-width: 1024px) {
+  #landing {
+    background-attachment: scroll;
+  }
 }
 @media (min-width: 801px) {
   #landing {
@@ -7610,6 +7635,30 @@ h1, h2, h3, h4, h5, h6 {
   #landing {
     height: 300px;
   }
+}
+#landing #landing-copy {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 30%;
+  min-width: 200px;
+  padding: 2% 1%;
+  background-color: rgba(121, 179, 196, 0.85);
+  color: #fff;
+}
+#landing #landing-copy h1 {
+  margin-bottom: 0.5em;
+}
+#landing #landing-copy p {
+  font-size: 1.1em;
+}
+#landing #keep-scrolling {
+  position: absolute;
+  top: 81%;
+  left: 50%;
+  font-size: 3.5em;
+  color: #F9F6F2;
+  -webkit-animation: scrolls 1.2s ease-out infinite;
 }
 
 .header--fixed {
@@ -7629,12 +7678,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .slideUp {
   -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
 }
 
 .slideDown {
   -webkit-transform: translateY(-3em);
+  -moz-transform: translateY(-3em);
   -ms-transform: translateY(-3em);
   transform: translateY(-3em);
 }
