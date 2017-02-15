@@ -88,19 +88,37 @@
 #landing {
 	@include parlxImage('../images/backgrounds/landing/bg9.jpg');
 	#landing-copy {
+		opacity: 0;
 		position: absolute;
     	top: 30%;
     	left: 10%;
     	width: 30%;
-    	min-width: 200px;
-    	padding: 2% 1%;
-    	background-color: rgba($lightBlue, 0.85);
+    	min-width: 250px;
+    	padding: 2%;
+    	background-color: rgba($lightBlue, 0.88);
     	color: #fff;
+    	-webkit-transform: translateX(-20%);
+        -moz-transform: translateX(-20%);
+        -ms-transform: translateX(-20%);
+        transform: translateX(-20%);
+        transition: all 1s;
     	h1 {
-    		margin-bottom: 0.5em;
+    		padding-bottom: 0.4em;
+    		font-family: $headFont;
+    		font-size: 2em;
+    		font-weight: lighter;
+    		letter-spacing: 0.1em;
+    		border-bottom: 1px solid #FFF;
     	}
     	p {
     		font-size: 1.1em;
+    	}
+    	&.showing {
+    		opacity: 1;
+    		-webkit-transform: translateX(0%);
+	        -moz-transform: translateX(0%);
+	        -ms-transform: translateX(0%);
+	        transform: translateX(0%);
     	}
 	}
 	#keep-scrolling {
@@ -111,4 +129,29 @@
 		color: $lightPink;
 		-webkit-animation: scrolls 1.2s ease-out infinite;
 	}	
+}
+
+
+#sec2 { 
+	h1 {
+		padding: 2%;
+    	background-color: rgba($lightBlue, 0.88);
+    	color: #fff;
+    	-webkit-transform: translateX(-20%);
+        -moz-transform: translateX(-20%);
+        -ms-transform: translateX(-20%);
+        transform: translateX(-20%);
+        transition: all 1s;
+        opacity: 0;
+
+        &.showing {
+    		opacity: 1;
+    		-webkit-transform: translateX(0%);
+	        -moz-transform: translateX(0%);
+	        -ms-transform: translateX(0%);
+	        transform: translateX(0%);
+    	}
+	}
+
+
 }
