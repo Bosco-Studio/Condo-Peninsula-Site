@@ -7938,6 +7938,114 @@ h1, h2, h3, h4, h5, h6 {
   color: #F9F6F2;
 }
 
+#contact-main #contact-top {
+  background: url("../images/backgrounds/landing/bg3.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+@media only screen and (max-device-width: 1024px) {
+  #contact-main #contact-top {
+    background-attachment: scroll;
+  }
+}
+@media (min-width: 801px) {
+  #contact-main #contact-top {
+    height: 550px;
+  }
+}
+@media (max-width: 800px) {
+  #contact-main #contact-top {
+    height: 550px;
+  }
+}
+@media (max-width: 300px) {
+  #contact-main #contact-top {
+    height: 300px;
+  }
+}
+@media (min-width: 801px) {
+  #contact-main #contact-top {
+    height: 350px;
+  }
+}
+@media (max-width: 800px) {
+  #contact-main #contact-top {
+    height: 350px;
+  }
+}
+@media (max-width: 300px) {
+  #contact-main #contact-top {
+    height: 300px;
+  }
+}
+#contact-main #contact-bottom {
+  background-color: #79b3c4;
+}
+#contact-main #contact-bottom #contact-col-1 {
+  padding: 0px;
+}
+#contact-main #contact-bottom #contact-col-2 {
+  color: #F9F6F2;
+  height: 550px;
+}
+#contact-main #contact-bottom #contact-col-2 h2 {
+  padding-bottom: 0.4em;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2em;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid #FFF;
+  text-align: center;
+}
+#contact-main #contact-bottom #contact-col-2 ul li {
+  margin-bottom: 0.5em;
+}
+#contact-main #contact-bottom #contact-col-2 ul li a {
+  color: #F9F6F2;
+  transition: all 0.3s;
+}
+#contact-main #contact-bottom #contact-col-2 ul li a:hover {
+  color: #F9F6F2;
+  text-decoration: none;
+}
+#contact-main #contact-bottom #contact-col-2 ul li a:visited:active {
+  color: #F9F6F2;
+  text-decoration: none;
+}
+#contact-main #contact-bottom #contact-col-2 .btn {
+  background-color: transparent;
+  display: block;
+  padding: 2% 1%;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  color: #F9F6F2;
+  border: 1px solid #F9F6F2;
+  transition: all 0.5s;
+}
+#contact-main #contact-bottom #contact-col-2 .btn:hover {
+  background-color: #F9F6F2;
+  color: #d0ad8a;
+}
+@media (max-width: 993px) {
+  #contact-main #contact-bottom #contact-col-2 .btn {
+    width: 100%;
+  }
+}
+#contact-main #form-submitted-correctly {
+  display: none;
+}
+
 .header--fixed {
   position: fixed;
   z-index: 10;

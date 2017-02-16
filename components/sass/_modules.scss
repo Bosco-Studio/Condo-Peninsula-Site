@@ -260,8 +260,67 @@
 	}
 }
 
-
-
+// Contact
+// ============
+#contact-main {
+	#contact-top {
+		@include parlxImage('../images/backgrounds/landing/bg3.jpg');
+		@media (min-width: 801px) {
+		   height: 350px;
+		}
+		 
+		@media (max-width: 800px) {
+		   height: 350px;
+		}
+		 
+		@media (max-width: 300px) {
+		   height: 300px;
+		}
+	}
+	#contact-bottom {
+		background-color: $lightBlue;
+		#contact-col-1 {
+			padding: 0px;
+		}
+		#contact-col-2 {
+			color: $lightPink;
+			height: 550px;
+			h2 {
+				padding-bottom: 0.4em;
+	    		font-family: $headFont;
+	    		font-size: 2em;
+	    		font-weight: lighter;
+	    		letter-spacing: 0.1em;
+	    		border-bottom: 1px solid #FFF;
+	    		text-align: center
+			}
+			ul {
+				li {
+					margin-bottom: 0.5em;
+					a {
+						color: $lightPink;
+						transition: all 0.3s;
+						&:hover {
+							color: $lightPink;
+							text-decoration: none
+						}
+						&:visited:active {
+							color: $lightPink;
+							text-decoration: none
+						}
+					}
+				}
+			}
+			.btn {
+				background-color: transparent;
+				@include btnOne($lightPink, $pinkSand, $mainNavBreakPoint);
+			}
+		}
+	}
+	#form-submitted-correctly {
+		display: none
+	}
+}
 
 
 
