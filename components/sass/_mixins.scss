@@ -35,6 +35,7 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  overflow: hidden;
 
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -129,5 +130,24 @@
     letter-spacing: 0.1em;
     line-height: 1.4em;
     font-size: 1.5em;
+  }
+}
+//===========
+@mixin btnOne($color1, $color2, $breakPoint) {
+  display: block;
+  padding: 2% 1%;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  color: $color1;
+  border: 1px solid $color1;
+  transition: all 0.5s;
+  &:hover {
+    background-color: $color1;
+    color: $color2;
+  }
+  @media (max-width: $breakPoint) {
+    width: 100%;
   }
 }

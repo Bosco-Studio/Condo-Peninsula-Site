@@ -132,13 +132,13 @@
 }
 
 
-#sec2, #sec4 { 
+#sec2, #sec4, #sec6 { 
  @include dividerSection($lightPink, $pinkSand);
 }
 
 #sec3, #sec5 { 
 	@include parlxImage('../images/backgrounds/landing/bg2.jpg');
-
+	
 	.second-col {
 		height: 100%;
 		padding: 5%;
@@ -149,8 +149,11 @@
         -moz-transform: translateX(20%);
         -ms-transform: translateX(20%);
         transform: translateX(20%);
-        transition: all 1s;
+        transition: all 1.3s;
     	opacity: 0;
+    	@media (max-width: $mainNavBreakPoint) {
+			font-size: 0.8em;
+		}
         &.showing {
     		opacity: 1;
     		-webkit-transform: translateX(0%);
@@ -160,6 +163,10 @@
     	}
 		p {
 			font-size: 1.5em;
+			margin-bottom: 1.5em;
+		}
+		.btn-style-1 {
+			@include btnOne($lightPink, $lightBlue, $mainNavBreakPoint);
 		}
 	}
 }
@@ -167,3 +174,103 @@
 #sec5 { 
 	@include parlxImage('../images/backgrounds/landing/bg7.jpg');
 }
+
+#sec7 { 
+	@include parlxImage('../images/backgrounds/landing/bg6.jpg');
+	padding-top: 8em;
+	.copy {
+		background-color: rgba($pinkSand, 0.70);
+		padding: 3%;
+		margin: 0 auto;
+    	display: block;
+    	float: none;
+    	opacity: 0;
+    	-webkit-transform: translateY(-20%);
+	    -moz-transform: translateY(-20%);
+	    -ms-transform: translateY(-20%);
+	    transform: translateY(-20%);
+	    -webkit-transition: all 1.5s;
+	    -moz-transition: all 1.5s;
+	    -ms-transition: all 1.5s;
+	    transition: all 1.5s;
+		h2 {
+			color: $lightPink;
+			padding-bottom: 0.4em;
+    		font-family: $headFont;
+    		font-size: 1.5em;
+    		letter-spacing: 0.1em;
+    		text-align: center;
+    		margin-bottom: 1.5em;
+		}
+		.btn-style-2 {
+			@include btnOne($lightPink, $pinkSand, $mainNavBreakPoint);
+			font-size: 1.2em;
+			margin-bottom: 1.5em;
+		}
+		&.showing {
+    		opacity: 1;
+    		-webkit-transform: translateX(0%);
+	        -moz-transform: translateX(0%);
+	        -ms-transform: translateX(0%);
+	        transform: translateX(0%);
+    	}
+	}
+}
+
+// Footer
+// ============
+#main-footer {
+	background-color: $lightPink;
+	color: $pinkSand;
+	#footer-top {
+		padding: 4%;
+	}
+	.foot-section {
+		padding: 2%;
+		ul {
+			li {
+				margin-bottom: 0.5em;
+				a {
+					color: $pinkSand;
+					transition: all 0.3s;
+					&:hover {
+						color: $lightBlue;
+						text-decoration: none
+					}
+					&:visited:active {
+						color: $lightPink;
+						text-decoration: none
+					}
+				}
+			}
+		}
+	}
+	#foot-logo {
+		max-width: 200px;
+		margin-bottom: 1.5em;
+		@media (max-width: 768px) {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	#footer-bottom {
+		padding: 2%;
+		background-color: $lightBlue;
+		color: $lightPink;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

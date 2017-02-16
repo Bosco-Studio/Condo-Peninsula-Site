@@ -28,10 +28,10 @@ Math.easeOut = function (t, b, c, d) { t /= d; return -c * t*(t-2) + b; };
 (function() { // do not mess global space
 var
   interval, // scroll is being eased
-  mult = 3, // how fast do we scroll
+  mult = 0, // how fast do we scroll
   dir = 0, // 1 = scroll down, -1 = scroll up
-  steps = 50, // how many steps in animation
-  length = 40; // how long to animate
+  steps = 30, // how many steps in animation
+  length = 30; // how long to animate
 function MouseWheelHandler(e) {
   e.preventDefault(); // prevent default browser scroll
   clearInterval(interval); // cancel previous animation
@@ -55,7 +55,7 @@ function MouseWheelHandler(e) {
     //window.scrollTo(0,pos);
     tgt.scrollTop = pos;
     if(step>=steps) { // scroll finished without speed up - stop by easing out
-      mult = 0;
+      mult = 2;
       clearInterval(interval);
     }
   },10);
