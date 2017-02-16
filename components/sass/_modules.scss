@@ -123,7 +123,7 @@
 	}
 	#keep-scrolling {
 		position: absolute;
-		top: 81%;
+		bottom: 10%;
 		left: 50%;
 		font-size: 3.5em;
 		color: $lightPink;
@@ -133,17 +133,24 @@
 
 
 #sec2 { 
-	h1 {
-		padding: 2%;
-    	background-color: rgba($lightBlue, 0.88);
-    	color: #fff;
-    	-webkit-transform: translateX(-20%);
-        -moz-transform: translateX(-20%);
-        -ms-transform: translateX(-20%);
-        transform: translateX(-20%);
-        transition: all 1s;
-        opacity: 0;
+ @include dividerSection($lightPink, $pinkSand);
+}
 
+#sec3 { 
+	@include parlxImage('http://wp1.themexlab.com/html/homestate/images/parallax/image-1.jpg');
+
+	.second-col {
+		height: 100%;
+		padding: 5%;
+		padding-top: 15%;
+		background-color: rgba($lightBlue, 0.88);
+		color: #FFF;
+		-webkit-transform: translateX(20%);
+        -moz-transform: translateX(20%);
+        -ms-transform: translateX(20%);
+        transform: translateX(20%);
+        transition: all 1s;
+    	opacity: 0;
         &.showing {
     		opacity: 1;
     		-webkit-transform: translateX(0%);
@@ -151,7 +158,8 @@
 	        -ms-transform: translateX(0%);
 	        transform: translateX(0%);
     	}
+		p {
+			font-size: 1.5em;
+		}
 	}
-
-
 }

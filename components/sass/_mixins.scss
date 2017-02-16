@@ -118,3 +118,16 @@
     }
   }
 }
+//===========
+@mixin dividerSection($Bgc, $FontC) {
+  background-color: $Bgc;
+  padding: 4% 5%;
+  h2 {
+    color: $FontC;
+    font-family: $headFont;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    line-height: 1.4em;
+    font-size: 2em;
+  }
+}

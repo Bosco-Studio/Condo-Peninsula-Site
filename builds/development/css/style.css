@@ -7668,30 +7668,81 @@ h1, h2, h3, h4, h5, h6 {
 }
 #landing #keep-scrolling {
   position: absolute;
-  top: 81%;
+  bottom: 10%;
   left: 50%;
   font-size: 3.5em;
   color: #F9F6F2;
   -webkit-animation: scrolls 1.2s ease-out infinite;
 }
 
-#sec2 h1 {
-  padding: 2%;
+#sec2 {
+  background-color: #F9F6F2;
+  padding: 4% 5%;
+}
+#sec2 h2 {
+  color: #d0ad8a;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+  line-height: 1.4em;
+  font-size: 2em;
+}
+
+#sec3 {
+  background: url("http://wp1.themexlab.com/html/homestate/images/parallax/image-1.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+@media only screen and (max-device-width: 1024px) {
+  #sec3 {
+    background-attachment: scroll;
+  }
+}
+@media (min-width: 801px) {
+  #sec3 {
+    height: 550px;
+  }
+}
+@media (max-width: 800px) {
+  #sec3 {
+    height: 550px;
+  }
+}
+@media (max-width: 300px) {
+  #sec3 {
+    height: 300px;
+  }
+}
+#sec3 .second-col {
+  height: 100%;
+  padding: 5%;
+  padding-top: 15%;
   background-color: rgba(121, 179, 196, 0.88);
-  color: #fff;
-  -webkit-transform: translateX(-20%);
-  -moz-transform: translateX(-20%);
-  -ms-transform: translateX(-20%);
-  transform: translateX(-20%);
+  color: #FFF;
+  -webkit-transform: translateX(20%);
+  -moz-transform: translateX(20%);
+  -ms-transform: translateX(20%);
+  transform: translateX(20%);
   transition: all 1s;
   opacity: 0;
 }
-#sec2 h1.showing {
+#sec3 .second-col.showing {
   opacity: 1;
   -webkit-transform: translateX(0%);
   -moz-transform: translateX(0%);
   -ms-transform: translateX(0%);
   transform: translateX(0%);
+}
+#sec3 .second-col p {
+  font-size: 1.5em;
 }
 
 .header--fixed {
