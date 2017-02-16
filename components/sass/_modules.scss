@@ -132,12 +132,12 @@
 }
 
 
-#sec2 { 
+#sec2, #sec4 { 
  @include dividerSection($lightPink, $pinkSand);
 }
 
-#sec3 { 
-	@include parlxImage('http://wp1.themexlab.com/html/homestate/images/parallax/image-1.jpg');
+#sec3, #sec5 { 
+	@include parlxImage('../images/backgrounds/landing/bg2.jpg');
 
 	.second-col {
 		height: 100%;
@@ -162,4 +162,8 @@
 			font-size: 1.5em;
 		}
 	}
+}
+
+#sec5 { 
+	@include parlxImage('../images/backgrounds/landing/bg7.jpg');
 }

@@ -7395,6 +7395,7 @@ body {
   background-color: #F9F6F2;
   font-family: "Lato", serif;
   padding-bottom: 35em;
+  scroll-behavior: smooth;
 }
 
 .cf:after {
@@ -7675,21 +7676,21 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation: scrolls 1.2s ease-out infinite;
 }
 
-#sec2 {
+#sec2, #sec4 {
   background-color: #F9F6F2;
-  padding: 4% 5%;
+  padding: 8% 5%;
 }
-#sec2 h2 {
+#sec2 h2, #sec4 h2 {
   color: #d0ad8a;
   font-family: "Quicksand", sans-serif;
   font-size: 0.9em;
   letter-spacing: 0.1em;
   line-height: 1.4em;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
-#sec3 {
-  background: url("http://wp1.themexlab.com/html/homestate/images/parallax/image-1.jpg") no-repeat;
+#sec3, #sec5 {
+  background: url("../images/backgrounds/landing/bg2.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -7702,26 +7703,26 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease-out;
 }
 @media only screen and (max-device-width: 1024px) {
-  #sec3 {
+  #sec3, #sec5 {
     background-attachment: scroll;
   }
 }
 @media (min-width: 801px) {
-  #sec3 {
+  #sec3, #sec5 {
     height: 550px;
   }
 }
 @media (max-width: 800px) {
-  #sec3 {
+  #sec3, #sec5 {
     height: 550px;
   }
 }
 @media (max-width: 300px) {
-  #sec3 {
+  #sec3, #sec5 {
     height: 300px;
   }
 }
-#sec3 .second-col {
+#sec3 .second-col, #sec5 .second-col {
   height: 100%;
   padding: 5%;
   padding-top: 15%;
@@ -7734,15 +7735,49 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 1s;
   opacity: 0;
 }
-#sec3 .second-col.showing {
+#sec3 .second-col.showing, #sec5 .second-col.showing {
   opacity: 1;
   -webkit-transform: translateX(0%);
   -moz-transform: translateX(0%);
   -ms-transform: translateX(0%);
   transform: translateX(0%);
 }
-#sec3 .second-col p {
+#sec3 .second-col p, #sec5 .second-col p {
   font-size: 1.5em;
+}
+
+#sec5 {
+  background: url("../images/backgrounds/landing/bg7.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+@media only screen and (max-device-width: 1024px) {
+  #sec5 {
+    background-attachment: scroll;
+  }
+}
+@media (min-width: 801px) {
+  #sec5 {
+    height: 550px;
+  }
+}
+@media (max-width: 800px) {
+  #sec5 {
+    height: 550px;
+  }
+}
+@media (max-width: 300px) {
+  #sec5 {
+    height: 300px;
+  }
 }
 
 .header--fixed {
