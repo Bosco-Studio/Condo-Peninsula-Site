@@ -263,14 +263,15 @@
 // Contact
 // ============
 #contact-main {
+	background-color: $lightBlue;
 	#contact-top {
-		@include parlxImage('../images/backgrounds/landing/bg3.jpg');
+		@include parlxImage('../images/backgrounds/landing/bg13.jpg');
 		@media (min-width: 801px) {
-		   height: 350px;
+		   height: 450px;
 		}
 		 
 		@media (max-width: 800px) {
-		   height: 350px;
+		   height: 450px;
 		}
 		 
 		@media (max-width: 300px) {
@@ -278,13 +279,13 @@
 		}
 	}
 	#contact-bottom {
-		background-color: $lightBlue;
 		#contact-col-1 {
 			padding: 0px;
 		}
 		#contact-col-2 {
 			color: $lightPink;
 			height: 550px;
+			padding: 2%;
 			h2 {
 				padding-bottom: 0.4em;
 	    		font-family: $headFont;

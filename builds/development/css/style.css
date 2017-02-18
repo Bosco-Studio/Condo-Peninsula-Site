@@ -7938,8 +7938,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #F9F6F2;
 }
 
+#contact-main {
+  background-color: #79b3c4;
+}
 #contact-main #contact-top {
-  background: url("../images/backgrounds/landing/bg3.jpg") no-repeat;
+  background: url("../images/backgrounds/landing/bg13.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -7974,12 +7977,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 801px) {
   #contact-main #contact-top {
-    height: 350px;
+    height: 450px;
   }
 }
 @media (max-width: 800px) {
   #contact-main #contact-top {
-    height: 350px;
+    height: 450px;
   }
 }
 @media (max-width: 300px) {
@@ -7987,15 +7990,13 @@ h1, h2, h3, h4, h5, h6 {
     height: 300px;
   }
 }
-#contact-main #contact-bottom {
-  background-color: #79b3c4;
-}
 #contact-main #contact-bottom #contact-col-1 {
   padding: 0px;
 }
 #contact-main #contact-bottom #contact-col-2 {
   color: #F9F6F2;
   height: 550px;
+  padding: 2%;
 }
 #contact-main #contact-bottom #contact-col-2 h2 {
   padding-bottom: 0.4em;
