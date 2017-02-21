@@ -84,7 +84,7 @@
 		}
 	}
 	#sec1 {
-		@include parlxImage('../images/backgrounds/landing/bg13.jpg', 650px);
+		@include parlxImage('../images/backgrounds/landing/bg29.jpg', 650px);
 	}
 
 	#sec2 {
@@ -103,9 +103,6 @@
 			@media (max-width: 768px) {
 				margin-bottom: 1.5em;
 			}
-			.apart-type-img {
-				@include backImage('../images/backgrounds/landing/bg13.jpg', 150px);
-			}
 
 			.apart-type-copy {
 				h2 {
@@ -123,6 +120,31 @@
 					-ms-transition: all 0.8s ease;
 					transition: all 0.8s ease;
 				}
+			}
+		}
+		#apartment-type-A {
+			.apart-type-img {
+				@include backImage('../images/backgrounds/landing/bg26.jpg', 150px);
+			}
+		}
+		#apartment-type-B {
+			.apart-type-img {
+				@include backImage('../images/backgrounds/landing/bg27.jpg', 150px);
+			}
+		}
+		#apartment-type-C {
+			.apart-type-img {
+				@include backImage('../images/backgrounds/landing/bg28.jpg', 150px);
+			}
+		}
+		#apartment-type-C1 {
+			.apart-type-img {
+				@include backImage('../images/backgrounds/landing/bg29.jpg', 150px);
+			}
+		}
+		#apartment-type-C2 {
+			.apart-type-img {
+				@include backImage('../images/backgrounds/landing/bg30.jpg', 150px);
 			}
 		}
 	}

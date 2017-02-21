@@ -7641,7 +7641,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #main-footer #footer-bottom {
-  padding: 2%;
+  padding: 2% 4%;
   background-color: #79b3c4;
   color: #F9F6F2;
 }
@@ -7719,7 +7719,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main-landing #sec1 {
-  background: url("../images/backgrounds/landing/bg9.jpg") no-repeat;
+  background: url("../images/backgrounds/landing/bg25.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -7810,7 +7810,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5em;
 }
 #main-landing #sec3 {
-  background: url("../images/backgrounds/landing/bg2.jpg") no-repeat;
+  background: url("../images/backgrounds/landing/bg26.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -7896,7 +7896,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #main-landing #sec5 {
-  background: url("../images/backgrounds/landing/bg7.jpg") no-repeat;
+  background: url("../images/backgrounds/landing/bg18.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8138,6 +8138,9 @@ h1, h2, h3, h4, h5, h6 {
   #lifestyle-main #sec1 .welcome-copy .btn-style-1, #lifestyle-main #sec2 .welcome-copy .btn-style-1, #lifestyle-main #sec3 .welcome-copy .btn-style-1, #lifestyle-main #sec4 .welcome-copy .btn-style-1 {
     width: 100%;
   }
+}
+#lifestyle-main #sec2 .welcome-copy, #lifestyle-main #sec4 .welcome-copy {
+  left: 20%;
 }
 #lifestyle-main #sec1 {
   background: url("../images/backgrounds/landing/bg18.jpg") no-repeat;
@@ -8861,7 +8864,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #apartments-main #sec1 {
-  background: url("../images/backgrounds/landing/bg13.jpg") no-repeat;
+  background: url("../images/backgrounds/landing/bg29.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8914,32 +8917,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.5em;
   }
 }
-#apartments-main #sec2 .aparment-type .apart-type-img {
-  background: url("../images/backgrounds/landing/bg13.jpg") no-repeat 50% 20%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-@media (min-width: 801px) {
-  #apartments-main #sec2 .aparment-type .apart-type-img {
-    height: 150px;
-  }
-}
-@media (max-width: 800px) {
-  #apartments-main #sec2 .aparment-type .apart-type-img {
-    height: 150px;
-  }
-}
-@media (max-width: 300px) {
-  #apartments-main #sec2 .aparment-type .apart-type-img {
-    height: 150px;
-  }
-}
 #apartments-main #sec2 .aparment-type .apart-type-copy h2 {
   font-size: 1.5em;
 }
@@ -8952,6 +8929,136 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: all 0.8s ease;
   -ms-transition: all 0.8s ease;
   transition: all 0.8s ease;
+}
+#apartments-main #sec2 #apartment-type-A .apart-type-img {
+  background: url("../images/backgrounds/landing/bg26.jpg") no-repeat 50% 20%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+@media (min-width: 801px) {
+  #apartments-main #sec2 #apartment-type-A .apart-type-img {
+    height: 150px;
+  }
+}
+@media (max-width: 800px) {
+  #apartments-main #sec2 #apartment-type-A .apart-type-img {
+    height: 150px;
+  }
+}
+@media (max-width: 300px) {
+  #apartments-main #sec2 #apartment-type-A .apart-type-img {
+    height: 150px;
+  }
+}
+#apartments-main #sec2 #apartment-type-B .apart-type-img {
+  background: url("../images/backgrounds/landing/bg27.jpg") no-repeat 50% 20%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+@media (min-width: 801px) {
+  #apartments-main #sec2 #apartment-type-B .apart-type-img {
+    height: 150px;
+  }
+}
+@media (max-width: 800px) {
+  #apartments-main #sec2 #apartment-type-B .apart-type-img {
+    height: 150px;
+  }
+}
+@media (max-width: 300px) {
+  #apartments-main #sec2 #apartment-type-B .apart-type-img {
+    height: 150px;
+  }
+}
+#apartments-main #sec2 #apartment-type-C .apart-type-img {
+  background: url("../images/backgrounds/landing/bg28.jpg") no-repeat 50% 20%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+@media (min-width: 801px) {
+  #apartments-main #sec2 #apartment-type-C .apart-type-img {
+    height: 150px;
+  }
+}
+@media (max-width: 800px) {
+  #apartments-main #sec2 #apartment-type-C .apart-type-img {
+    height: 150px;
+  }
+}
+@media (max-width: 300px) {
+  #apartments-main #sec2 #apartment-type-C .apart-type-img {
+    height: 150px;
+  }
+}
+#apartments-main #sec2 #apartment-type-C1 .apart-type-img {
+  background: url("../images/backgrounds/landing/bg29.jpg") no-repeat 50% 20%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+@media (min-width: 801px) {
+  #apartments-main #sec2 #apartment-type-C1 .apart-type-img {
+    height: 150px;
+  }
+}
+@media (max-width: 800px) {
+  #apartments-main #sec2 #apartment-type-C1 .apart-type-img {
+    height: 150px;
+  }
+}
+@media (max-width: 300px) {
+  #apartments-main #sec2 #apartment-type-C1 .apart-type-img {
+    height: 150px;
+  }
+}
+#apartments-main #sec2 #apartment-type-C2 .apart-type-img {
+  background: url("../images/backgrounds/landing/bg30.jpg") no-repeat 50% 20%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+@media (min-width: 801px) {
+  #apartments-main #sec2 #apartment-type-C2 .apart-type-img {
+    height: 150px;
+  }
+}
+@media (max-width: 800px) {
+  #apartments-main #sec2 #apartment-type-C2 .apart-type-img {
+    height: 150px;
+  }
+}
+@media (max-width: 300px) {
+  #apartments-main #sec2 #apartment-type-C2 .apart-type-img {
+    height: 150px;
+  }
 }
 
 #amenities-main {
@@ -8967,7 +9074,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5em;
 }
 #amenities-main #sec1 {
-  background: url("../images/backgrounds/landing/bg13.jpg") no-repeat;
+  background: url("../images/backgrounds/landing/bg30.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9234,7 +9341,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #79b3c4;
 }
 #contact-main #contact-top {
-  background: url("../images/backgrounds/landing/bg13.jpg") no-repeat;
+  background: url("../images/backgrounds/landing/bg24.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

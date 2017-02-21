@@ -2,7 +2,7 @@
 // ============
 #main-landing {
 	#sec1 {
-		@include parlxImage('../images/backgrounds/landing/bg9.jpg', 550px);
+		@include parlxImage('../images/backgrounds/landing/bg25.jpg', 550px);
 		#welcome-copy {
 			position: absolute;
 	    	top: 30%;
@@ -39,7 +39,7 @@
 	}
 
 	#sec3 { 
-		@include parlxImage('../images/backgrounds/landing/bg2.jpg', 550px);
+		@include parlxImage('../images/backgrounds/landing/bg26.jpg', 550px);
 		
 		.hidden-col {
 			height: 100%;
@@ -60,7 +60,7 @@
 	}
 
 	#sec5 { 
-		@include parlxImage('../images/backgrounds/landing/bg7.jpg', 550px);
+		@include parlxImage('../images/backgrounds/landing/bg18.jpg', 550px);
 		.hidden-col {
 			height: 100%;
 			padding: 5%;

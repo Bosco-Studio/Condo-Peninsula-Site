@@ -33,6 +33,13 @@
 			}
 		}
 	}
+	
+	#sec2, #sec4 {
+		.welcome-copy {
+	    	left: 20%;
+		}
+	}
+
 	#sec1 {
 		@include parlxImage('../images/backgrounds/landing/bg18.jpg', 650px);
 	}
