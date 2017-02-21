@@ -3,7 +3,7 @@
 #main-landing {
 	#sec1 {
 		@include parlxImage('../images/backgrounds/landing/bg9.jpg', 550px);
-		#landing-copy {
+		#welcome-copy {
 			position: absolute;
 	    	top: 30%;
 	    	left: 10%;
@@ -24,9 +24,9 @@
 	    	}
 		}
 		#keep-scrolling {
-			position: absolute;
-			bottom: 10%;
-			left: 50%;
+			margin-top: 500px;
+		    margin-left: 50%;
+		    z-index: 3;
 			font-size: 3.5em;
 			color: $lightPink;
 			-webkit-animation: scrolls 1.2s ease-out infinite;

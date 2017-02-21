@@ -28,7 +28,8 @@ if (env ==='development') {
 
 jsSources = [
 	'components/scripts/init.js',
-	'components/scripts/initHeadroom.js'
+	'components/scripts/initHeadroom.js',
+	'components/scripts/dotNav.js'
 	]; //Array of locations of js script files to unify(concat).
 
 sassSources = ['components/sass/style.sass']; //Array of locations of sass files to process(compass).

@@ -7650,11 +7650,12 @@ h1, h2, h3, h4, h5, h6 {
 #dot-nav-wrapper {
   position: fixed;
   top: 230px;
-  left: 30px;
+  left: 15px;
+  z-index: 10;
   padding: 15px;
   background-color: rgba(208, 173, 138, 0.77);
   border-radius: 20px;
-  display: none;
+  /*display: none;*/
 }
 #dot-nav-wrapper .fa {
   display: block;
@@ -7752,7 +7753,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 550px;
   }
 }
-#main-landing #sec1 #landing-copy {
+#main-landing #sec1 #welcome-copy {
   position: absolute;
   top: 30%;
   left: 10%;
@@ -7771,14 +7772,14 @@ h1, h2, h3, h4, h5, h6 {
   -ms-transition: all 1s;
   transition: all 1s;
 }
-#main-landing #sec1 #landing-copy.showing {
+#main-landing #sec1 #welcome-copy.showing {
   opacity: 1;
   -webkit-transform: translateX(0%);
   -moz-transform: translateX(0%);
   -ms-transform: translateX(0%);
   transform: translateX(0%);
 }
-#main-landing #sec1 #landing-copy h1 {
+#main-landing #sec1 #welcome-copy h1 {
   padding-bottom: 0.4em;
   font-family: "Quicksand", sans-serif;
   font-size: 2em;
@@ -7786,13 +7787,13 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.1em;
   border-bottom: 1px solid #FFF;
 }
-#main-landing #sec1 #landing-copy p {
+#main-landing #sec1 #welcome-copy p {
   font-size: 1.1em;
 }
 #main-landing #sec1 #keep-scrolling {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
+  margin-top: 500px;
+  margin-left: 50%;
+  z-index: 3;
   font-size: 3.5em;
   color: #F9F6F2;
   -webkit-animation: scrolls 1.2s ease-out infinite;
@@ -8071,8 +8072,75 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#lifestyle-main #sec1, #lifestyle-main #sec2, #lifestyle-main #sec3, #lifestyle-main #sec4 {
+  position: relative;
+}
+#lifestyle-main #sec1 .welcome-copy, #lifestyle-main #sec2 .welcome-copy, #lifestyle-main #sec3 .welcome-copy, #lifestyle-main #sec4 .welcome-copy {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  width: 30%;
+  min-width: 250px;
+  padding: 2%;
+  font-size: 0.8em;
+  color: #F9F6F2;
+  background-color: rgba(121, 179, 196, 0.88);
+  opacity: 0;
+  -webkit-transform: translateX(-20%);
+  -moz-transform: translateX(-20%);
+  -ms-transform: translateX(-20%);
+  transform: translateX(-20%);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+#lifestyle-main #sec1 .welcome-copy.showing, #lifestyle-main #sec2 .welcome-copy.showing, #lifestyle-main #sec3 .welcome-copy.showing, #lifestyle-main #sec4 .welcome-copy.showing {
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+}
+@media (max-width: 993px) {
+  #lifestyle-main #sec1 .welcome-copy, #lifestyle-main #sec2 .welcome-copy, #lifestyle-main #sec3 .welcome-copy, #lifestyle-main #sec4 .welcome-copy {
+    font-size: 0.7em;
+  }
+}
+#lifestyle-main #sec1 .welcome-copy h2, #lifestyle-main #sec2 .welcome-copy h2, #lifestyle-main #sec3 .welcome-copy h2, #lifestyle-main #sec4 .welcome-copy h2 {
+  padding-bottom: 0.4em;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2em;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid #FFF;
+}
+#lifestyle-main #sec1 .welcome-copy p, #lifestyle-main #sec2 .welcome-copy p, #lifestyle-main #sec3 .welcome-copy p, #lifestyle-main #sec4 .welcome-copy p {
+  font-size: 1.1em;
+}
+#lifestyle-main #sec1 .welcome-copy .btn-style-1, #lifestyle-main #sec2 .welcome-copy .btn-style-1, #lifestyle-main #sec3 .welcome-copy .btn-style-1, #lifestyle-main #sec4 .welcome-copy .btn-style-1 {
+  display: block;
+  padding: 2% 1%;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  color: #F9F6F2;
+  border: 1px solid #F9F6F2;
+  transition: all 0.5s;
+  font-size: 1.2em;
+}
+#lifestyle-main #sec1 .welcome-copy .btn-style-1:hover, #lifestyle-main #sec2 .welcome-copy .btn-style-1:hover, #lifestyle-main #sec3 .welcome-copy .btn-style-1:hover, #lifestyle-main #sec4 .welcome-copy .btn-style-1:hover {
+  background-color: #F9F6F2;
+  color: #79b3c4;
+}
+@media (max-width: 993px) {
+  #lifestyle-main #sec1 .welcome-copy .btn-style-1, #lifestyle-main #sec2 .welcome-copy .btn-style-1, #lifestyle-main #sec3 .welcome-copy .btn-style-1, #lifestyle-main #sec4 .welcome-copy .btn-style-1 {
+    width: 100%;
+  }
+}
 #lifestyle-main #sec1 {
-  background: url("../images/backgrounds/landing/bg1.jpg") no-repeat;
+  background: url("../images/backgrounds/landing/bg18.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8106,7 +8174,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #lifestyle-main #sec2 {
-  background: url("../images/backgrounds/landing/bg2.jpg") no-repeat;
+  background: url("../images/backgrounds/landing/bg19.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8140,7 +8208,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #lifestyle-main #sec3 {
-  background: url("../images/backgrounds/landing/bg3.jpg") no-repeat;
+  background: url("../images/backgrounds/landing/bg14.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8174,7 +8242,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #lifestyle-main #sec4 {
-  background: url("../images/backgrounds/landing/bg4.jpg") no-repeat;
+  background: url("../images/backgrounds/landing/bg15.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8204,40 +8272,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 300px) {
   #lifestyle-main #sec4 {
-    height: 650px;
-  }
-}
-#lifestyle-main #sec5 {
-  background: url("../images/backgrounds/landing/bg6.jpg") no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  overflow: hidden;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-@media only screen and (max-device-width: 1024px) {
-  #lifestyle-main #sec5 {
-    background-attachment: scroll;
-  }
-}
-@media (min-width: 801px) {
-  #lifestyle-main #sec5 {
-    height: 650px;
-  }
-}
-@media (max-width: 800px) {
-  #lifestyle-main #sec5 {
-    height: 650px;
-  }
-}
-@media (max-width: 300px) {
-  #lifestyle-main #sec5 {
     height: 650px;
   }
 }
