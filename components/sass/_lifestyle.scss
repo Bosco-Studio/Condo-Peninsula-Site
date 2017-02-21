@@ -12,6 +12,7 @@
 	    	padding: 2%;
 	    	font-size: 0.8em;
 	    	@include scrollHidden($lightPink, $lightBlue, 0.88, translateX, -20%, 1s);
+	    	z-index: 8;
 	    	@media (max-width: $mainNavBreakPoint) {
 				font-size: 0.7em;
 			}
@@ -44,7 +45,6 @@
 	#sec4 {
 		@include parlxImage('../images/backgrounds/landing/bg15.jpg', 650px);
 	}
-	section {}
 }
 
 
