@@ -27,7 +27,7 @@
 
 //==========
 
-@mixin parlxImage($image) {
+@mixin parlxImage($image, $divHeight) {
   background: url($image) no-repeat; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -47,15 +47,15 @@
   }
 
   @media (min-width: 801px) {
-    height: 550px;
+    height: $divHeight;
   }
  
   @media (max-width: 800px) {
-    height: 550px;
+    height: $divHeight;
   }
  
   @media (max-width: 300px) {
-    height: 300px;
+    height: $divHeight;
   }
 
 }
@@ -130,6 +130,28 @@
     letter-spacing: 0.1em;
     line-height: 1.4em;
     font-size: 1.5em;
+  }
+}
+//===========
+//===========
+@mixin scrollHidden($color, $bgc, $bgo, $transformation, $transformPer, $transitionDur) {
+  color: $color;
+  background-color: rgba($bgc, $bgo);
+  opacity: 0;
+  -webkit-transform: $transformation + "(" + $transformPer + ")";
+  -moz-transform: $transformation + "(" + $transformPer + ")";
+  -ms-transform: $transformation + "(" + $transformPer + ")";
+  transform: $transformation + "(" + $transformPer + ")";
+  -webkit-transition: all $transitionDur;
+  -moz-transition: all $transitionDur;
+  -ms-transition: all $transitionDur;
+  transition: all $transitionDur;
+  &.showing {
+    opacity: 1;
+    -webkit-transform: $transformation + "(" + 0% + ")";
+    -moz-transform: $transformation + "(" + 0% + ")";
+    -ms-transform: $transformation + "(" + 0% + ")";
+    transform: $transformation + "(" + 0% + ")";
   }
 }
 //===========

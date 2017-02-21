@@ -1,9 +1,15 @@
 // _base.scss
 // ==============
+html {
+    min-height: 100% !important;
+    height: 100%;
+}
 
 body {
 	background-color: $lightPink;
 	font-family: $bodyFont;
+    min-height: 100% !important;
+    height: 100%;
 }
 
 .cf {

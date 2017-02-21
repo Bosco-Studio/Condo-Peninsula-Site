@@ -1,0 +1,116 @@
+// Landing Page
+// ============
+#main-landing {
+	#sec1 {
+		@include parlxImage('../images/backgrounds/landing/bg9.jpg', 550px);
+		#landing-copy {
+			position: absolute;
+	    	top: 30%;
+	    	left: 10%;
+	    	width: 30%;
+	    	min-width: 250px;
+	    	padding: 2%;
+	    	@include scrollHidden($lightPink, $lightBlue, 0.88, translateX, -20%, 1s);
+	    	h1 {
+	    		padding-bottom: 0.4em;
+	    		font-family: $headFont;
+	    		font-size: 2em;
+	    		font-weight: lighter;
+	    		letter-spacing: 0.1em;
+	    		border-bottom: 1px solid #FFF;
+	    	}
+	    	p {
+	    		font-size: 1.1em;
+	    	}
+		}
+		#keep-scrolling {
+			position: absolute;
+			bottom: 10%;
+			left: 50%;
+			font-size: 3.5em;
+			color: $lightPink;
+			-webkit-animation: scrolls 1.2s ease-out infinite;
+		}	
+	}
+
+
+	#sec2, #sec4, #sec6 { 
+	 @include dividerSection($lightPink, $pinkSand);
+	}
+
+	#sec3 { 
+		@include parlxImage('../images/backgrounds/landing/bg2.jpg', 550px);
+		
+		.hidden-col {
+			height: 100%;
+			padding: 5%;
+			padding-top: 15%;
+			@include scrollHidden($lightPink, $lightBlue, 0.88, translateX, 20%, 1.3s);
+	    	@media (max-width: $mainNavBreakPoint) {
+				font-size: 0.8em;
+			}
+			p {
+				font-size: 1.5em;
+				margin-bottom: 1.5em;
+			}
+			.btn-style-1 {
+				@include btnOne($lightPink, $lightBlue, $mainNavBreakPoint);
+			}
+		}
+	}
+
+	#sec5 { 
+		@include parlxImage('../images/backgrounds/landing/bg7.jpg', 550px);
+		.hidden-col {
+			height: 100%;
+			padding: 5%;
+			padding-top: 15%;
+			@include scrollHidden($lightPink, $lightBlue, 0.88, translateX, -20%, 1.3s);
+	    	@media (max-width: $mainNavBreakPoint) {
+				font-size: 0.8em;
+			}
+			p {
+				font-size: 1.5em;
+				margin-bottom: 1.5em;
+			}
+			.btn-style-1 {
+				@include btnOne($lightPink, $lightBlue, $mainNavBreakPoint);
+			}
+		}
+	}
+
+	#sec7 { 
+		@include parlxImage('../images/backgrounds/landing/bg6.jpg', 550px);
+		padding-top: 8em;
+		.copy {
+			padding: 3%;
+			margin: 0 auto;
+	    	display: block;
+	    	float: none;
+		    @include scrollHidden($lightPink, $pinkSand, 0.70, translateY, -20%, 1.5s);
+			h2 {
+				padding-bottom: 0.4em;
+	    		font-family: $headFont;
+	    		font-size: 1.5em;
+	    		letter-spacing: 0.1em;
+	    		text-align: center;
+	    		margin-bottom: 1.5em;
+			}
+			.btn-style-2 {
+				@include btnOne($lightPink, $pinkSand, $mainNavBreakPoint);
+				font-size: 1.2em;
+				margin-bottom: 1.5em;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

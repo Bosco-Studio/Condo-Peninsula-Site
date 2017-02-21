@@ -1,0 +1,30 @@
+// Lifestyle Page
+// ============
+#lifestyle-main {
+	#sec1 {
+		@include parlxImage('../images/backgrounds/landing/bg1.jpg', 650px);
+	}
+	#sec2 {
+		@include parlxImage('../images/backgrounds/landing/bg2.jpg', 650px);
+	}
+	#sec3 {
+		@include parlxImage('../images/backgrounds/landing/bg3.jpg', 650px);
+	}
+	#sec4 {
+		@include parlxImage('../images/backgrounds/landing/bg4.jpg', 650px);
+	}
+	#sec5 {
+		@include parlxImage('../images/backgrounds/landing/bg6.jpg', 650px);
+	}
+	section {}
+}
+
+
+
+
+
+
+
+
+
+
