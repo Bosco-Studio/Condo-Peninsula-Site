@@ -1,24 +1,32 @@
-// Landing Page
+// Amenities Page
 // ============
-#main-landing {
+#amenities-main {
+	color: $pinkSand;
+	h1 {
+		padding-bottom: 0.4em;
+		font-family: $headFont;
+		font-size: 2em;
+		font-weight: lighter;
+		letter-spacing: 0.1em;
+		border-bottom: 1px solid;
+		margin-bottom: 1.5em;
+	}
 	#sec1 {
-		@include parlxImage('../images/backgrounds/landing/bg9.jpg');
-		#landing-copy {
-			opacity: 0;
+		@include parlxImage('../images/backgrounds/landing/bg13.jpg', 450px);
+		.welcome-copy {
 			position: absolute;
 	    	top: 30%;
-	    	left: 10%;
+	    	right: 10%;
 	    	width: 30%;
 	    	min-width: 250px;
 	    	padding: 2%;
-	    	background-color: rgba($lightBlue, 0.88);
-	    	color: #fff;
-	    	-webkit-transform: translateX(-20%);
-	        -moz-transform: translateX(-20%);
-	        -ms-transform: translateX(-20%);
-	        transform: translateX(-20%);
-	        transition: all 1s;
-	    	h1 {
+	    	font-size: 0.9em;
+	    	@include scrollHidden($lightPink, $lightBlue, 0.88, translateX, -20%, 1s);
+	    	z-index: 8;
+	    	@media (max-width: $mainNavBreakPoint) {
+				font-size: 0.8em;
+			}
+	    	h2 {
 	    		padding-bottom: 0.4em;
 	    		font-family: $headFont;
 	    		font-size: 2em;
@@ -29,70 +37,63 @@
 	    	p {
 	    		font-size: 1.1em;
 	    	}
-	    	&.showing {
-	    		opacity: 1;
-	    		-webkit-transform: translateX(0%);
-		        -moz-transform: translateX(0%);
-		        -ms-transform: translateX(0%);
-		        transform: translateX(0%);
-	    	}
-		}
-		#keep-scrolling {
-			position: absolute;
-			bottom: 10%;
-			left: 50%;
-			font-size: 3.5em;
-			color: $lightPink;
-			-webkit-animation: scrolls 1.2s ease-out infinite;
-		}	
-	}
-
-
-	#sec2, #sec4, #sec6 { 
-	 @include dividerSection($lightPink, $pinkSand);
-	}
-
-	#sec3, #sec5 { 
-		@include parlxImage('../images/backgrounds/landing/bg2.jpg');
-		
-		.second-col {
-			height: 100%;
-			padding: 5%;
-			padding-top: 15%;
-			background-color: rgba($lightBlue, 0.88);
-			color: #FFF;
-			-webkit-transform: translateX(20%);
-	        -moz-transform: translateX(20%);
-	        -ms-transform: translateX(20%);
-	        transform: translateX(20%);
-	        transition: all 1.3s;
-	    	opacity: 0;
-	    	@media (max-width: $mainNavBreakPoint) {
-				font-size: 0.8em;
-			}
-	        &.showing {
-	    		opacity: 1;
-	    		-webkit-transform: translateX(0%);
-		        -moz-transform: translateX(0%);
-		        -ms-transform: translateX(0%);
-		        transform: translateX(0%);
-	    	}
-			p {
-				font-size: 1.5em;
-				margin-bottom: 1.5em;
-			}
-			.btn-style-1 {
+	    	.btn-style-1 {
 				@include btnOne($lightPink, $lightBlue, $mainNavBreakPoint);
+				font-size: 1.2em;
 			}
 		}
 	}
-
-	#sec5 { 
-		@include parlxImage('../images/backgrounds/landing/bg7.jpg');
+	#sec2 {
+		padding-top: 3em;
+		padding-bottom: 1em;
+		.copy {
+			padding: 3%;
+			margin: 0 auto;
+	    	display: block;
+	    	float: none;
+	    	margin-top: 15em;
+	    	text-align: center;
+		    @include scrollHidden($lightPink, $pinkSand, 0.70, translateY, -20%, 1.5s);
+		    @media (max-width: $mainNavBreakPoint) {
+				//font-size: 0.8em;
+			}
+		}
+		h2 {
+			padding-bottom: 0.4em;
+			font-family: $headFont;
+			font-size: 1.5em;
+			letter-spacing: 0.1em;
+			text-align: center;
+			margin-bottom: 1.5em;
+		}
+		.btn-style-2 {
+			@include btnOne($lightPink, $pinkSand, $mainNavBreakPoint);
+			font-size: 1.2em;
+			margin-bottom: 1.5em;
+		}
+		.row {
+			margin-bottom: 0.5em;
+			p {
+				//text-align: center;
+				//font-size: 1em;
+			}
+		}
+		.amenitie {
+			@media (max-width: 768px) {
+				margin-bottom: 2em;
+			}
+		}
+		.amenIcon {
+			font-size: 1.2em;
+			display: block;
+			width: 100%;
+			text-align: left;
+			margin-bottom: 0.5em;
+		}
 	}
 
 	#sec7 { 
-		@include parlxImage('../images/backgrounds/landing/bg6.jpg');
+		@include parlxImage('../images/backgrounds/landing/bg6.jpg', 650px);
 		padding-top: 8em;
 		.copy {
 			background-color: rgba($pinkSand, 0.70);
