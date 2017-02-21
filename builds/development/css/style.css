@@ -7652,9 +7652,9 @@ h1, h2, h3, h4, h5, h6 {
   top: 230px;
   left: 30px;
   padding: 15px;
-  background-color: rgba(121, 179, 196, 0.77);
+  background-color: rgba(208, 173, 138, 0.77);
   border-radius: 20px;
-  /*display: none;*/
+  display: none;
 }
 #dot-nav-wrapper .fa {
   display: block;
@@ -7687,9 +7687,35 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
   border-radius: 50%;
   background-color: #F9F6F2;
+  background-color: #d9c6ac;
   text-indent: -999em;
   cursor: pointer;
   position: absolute;
+}
+
+.dotstyle-fillup li a {
+  overflow: hidden;
+  background-color: transparent;
+  /*box-shadow: inset 0 0 0 2px rgba(223,153,171,1);*/
+  transition: background 0.3s;
+}
+.dotstyle-fillup li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d9c6ac;
+  background-color: #F9F6F2;
+  box-shadow: 0 0 1px #F9F6F2;
+  transition: height 0.3s;
+}
+.dotstyle-fillup li a:hover, .dotstyle-fillup li a:focus {
+  background-color: #d0ad8a;
+}
+.dotstyle-fillup .current a:after {
+  height: 100%;
 }
 
 #main-landing #sec1 {

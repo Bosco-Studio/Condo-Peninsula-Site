@@ -15,14 +15,14 @@ var revealElementsOnScroll = function() {
     }
 }
 revealElementsOnScroll();
-/*Alienar menu con el header*/
+/*Scroll Functions*/
 jQuery(window).scroll(function () {
     revealElementsOnScroll();
 });
 
-/* Smooth scroll */
+/* Smooth scroll 
 http://stackoverflow.com/questions/19349245/enable-smooth-scrolling-for-my-website-in-all-browsers
-/*===================*/
+/*===================
 Math.easeOut = function (t, b, c, d) { t /= d; return -c * t*(t-2) + b; };
 
 (function() { // do not mess global space
@@ -62,25 +62,34 @@ function MouseWheelHandler(e) {
 }
 window.addEventListener("mousewheel", MouseWheelHandler, false);
 window.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
-})();
+})();*/
 
 
 
-/*Mostrar dot nav desp del header
-$(window).scroll(function () {
-	var dotTargets = $(".dot-link");
-	var sectionTargets = $(".content-section");
-    if ($(window).scrollTop() >= 600) {
-        $('#dot-nav-wrapper').fadeIn();
+/*Mostrar dot nav desp del header*/
+jQuery(window).scroll(function () {
+	var dotTargets = jQuery(".dot-link"),
+      sectionTargets = jQuery(".content-section"),
+      numberOfSections = (sectionTargets.length - 1),
+      windowTop = jQuery(window).scrollTop(),
+      firstDivTop = jQuery(sectionTargets[0]).offset().top,
+      lastDivBottom = jQuery(sectionTargets[numberOfSections]).offset().top + jQuery(sectionTargets[numberOfSections]).height();
+
+    console.log("first top" + firstDivTop);
+    console.log("windowtop" + windowTop);
+    console.log("lastTop" + lastDivBottom);
+
+    if (windowTop >= firstDivTop - 100 &&
+        windowTop <= lastDivBottom - jQuery(sectionTargets[numberOfSections]).height() + 50) {
+        jQuery('#dot-nav-wrapper').fadeIn(200);
     }else {
-    	$('#dot-nav-wrapper').fadeOut();
+    	jQuery('#dot-nav-wrapper').fadeOut(200);
     }
     for (var i = 0; i < sectionTargets.length; i++) {
-    	if ($(window).scrollTop() >= $(sectionTargets[i]).offset().top - 200) {
-    		$('.current').removeClass('current');
-    		$(dotTargets[i]).addClass('current');
+    	if (windowTop >= jQuery(sectionTargets[i]).offset().top - 200) {
+    		jQuery('.current').removeClass('current');
+    		jQuery(dotTargets[i]).addClass('current');
     	};
     };
 }	
 );
-*/
