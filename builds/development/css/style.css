@@ -9235,6 +9235,14 @@ h1, h2, h3, h4, h5, h6 {
 #amenities-main #sec2 .row {
   margin-bottom: 0.5em;
 }
+#amenities-main #sec2 .row p {
+  color: #888;
+  font-size: 1.2em;
+}
+#amenities-main #sec2 .row i {
+  color: #79b3c4;
+  font-size: 2em;
+}
 @media (max-width: 768px) {
   #amenities-main #sec2 .amenitie {
     margin-bottom: 2em;
