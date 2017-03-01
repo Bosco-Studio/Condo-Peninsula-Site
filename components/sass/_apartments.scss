@@ -154,6 +154,34 @@
 			}
 		}
 	}
+	.hidden-gal {
+		display: none;
+		position: fixed;
+    	z-index: 20;
+		width: 100%;
+		height: 100%;
+		padding: 0px 10%;
+		background-color: rgba(#181818, 0.8);
+		.gal {
+			width: 100%;
+			height: 100%;
+			@include backImage('../images/backgrounds/landing/bg30.jpg', 100%);
+		}
+		.slider {
+			position: fixed;
+			top: 45%;
+			cursor: pointer;
+			i {
+				font-size: 4.2em;
+			}
+		}
+		.slider-left {
+			left: 5%;
+		}
+		.slider-right {
+			right: 5%;
+		}
+	}
 }
 
 
