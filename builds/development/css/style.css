@@ -8920,15 +8920,21 @@ h1, h2, h3, h4, h5, h6 {
 #apartments-main #sec2 .aparment-type .apart-type-copy h2 {
   font-size: 1.5em;
 }
+#apartments-main #sec2 .aparment-type .apart-type-img {
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
 #apartments-main #sec2 .aparment-type:hover .apart-type-img {
   -webkit-transform: scale(1.6);
   -moz-transform: scale(1.6);
   -o-transform: scale(1.6);
   -ms-transform: scale(1.6);
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+}
+#apartments-main #sec2 .apart-type-img-wrapper {
+  max-height: 160px;
+  overflow: hidden;
 }
 #apartments-main #sec2 #apartment-type-A .apart-type-img {
   background: url("../images/backgrounds/landing/bg26.jpg") no-repeat 50% 20%;
