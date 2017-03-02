@@ -22,11 +22,13 @@ var galleryLocations = [["../images/aparments/A/1.jpg",
 	    						"../images/aparments/C2/4.jpg",
 	    						"../images/aparments/C2/5.jpg"]],
 	currApartmentUrls,
-	hiddenGal = jQuery(".hidden-gal"),		
+	hiddenGal = jQuery(".hidden-gal"),
+	currGalIndex;		
 	showGallery = function(element) {
+		currGalIndex = 0;
 		var apartmentTypes = jQuery(".aparment-type"),
 			currApartment  = element,
-		    firstImageDiv = hiddenGal.find(".gal")[0];
+		    firstImageDiv = hiddenGal.find(".current");
 		hiddenGal.fadeIn();
 		for (var i = 0; i < apartmentTypes.length; i++) {
 		   	if (currApartment === apartmentTypes[i]) {
@@ -34,11 +36,26 @@ var galleryLocations = [["../images/aparments/A/1.jpg",
 		   	}
 		}
 		console.log(firstImageDiv);
-		jQuery(firstImageDiv).css('background-image', 'url(' + currApartmentUrls[0] + ')');						
+		jQuery(firstImageDiv).css('background-image', 'url(' + currApartmentUrls[currGalIndex] + ')');						
 	},
 	changeGalIamge = function(nextIndex) {
-		var currGalIndex = 0;
-
+		var nextGalIndex = currGalIndex + nextIndex,
+			currDiv = hiddenGal.find(".current"),
+			nextDiv = hiddenGal.find(".next");
+			currGalIndex = nextGalIndex;
+			console.log(nextGalIndex);
+			if (nextGalIndex < 0) {
+				nextGalIndex = currApartmentUrls.length - 1;
+				currGalIndex = nextGalIndex;
+				console.log(nextGalIndex);
+			}else if (nextGalIndex > currApartmentUrls.length - 1) {
+				nextGalIndex = 0;
+				currGalIndex = nextGalIndex;
+				console.log(nextGalIndex);
+			}
+			jQuery(nextDiv).css('background-image', 'url(' + currApartmentUrls[nextGalIndex] + ')');
+			jQuery(currDiv).removeClass("current").addClass("next");
+			jQuery(nextDiv).removeClass("next").addClass("current");
 	}
 
 
@@ -46,6 +63,15 @@ jQuery('.aparment-type').click(function(event){
   event.preventDefault();
   showGallery(this);
 });
+
+jQuery('.slider-left').click(function(){
+  changeGalIamge(-1);
+});
+
+jQuery('.slider-right').click(function(){
+  changeGalIamge(1);
+});
+
 /*
 if (jQuery(".aparment-type").length > 0) {
 

@@ -162,24 +162,39 @@
 		height: 100%;
 		padding: 0px 10%;
 		background-color: rgba(#181818, 0.8);
+		transition: all 0.4s;
 		.gal {
-			width: 100%;
+			position: absolute;
+			width: 80%;
 			height: 100%;
 			@include backImage('../images/backgrounds/landing/bg30.jpg', 100%);
+		}
+		.next {
+			opacity: 0;
+			z-index: 19;
+		}
+		.current {
+			opacity: 1;
+			z-index: 20;
 		}
 		.slider {
 			position: fixed;
 			top: 45%;
 			cursor: pointer;
+			transition: all 0.3s;
+			padding: 2%;
 			i {
 				font-size: 4.2em;
 			}
+			&:hover {
+				color: $lightBlue;
+			}
 		}
 		.slider-left {
-			left: 5%;
+			left: 3%;
 		}
 		.slider-right {
-			right: 5%;
+			right: 3%;
 		}
 	}
 }

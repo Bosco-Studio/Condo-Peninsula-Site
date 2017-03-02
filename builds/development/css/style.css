@@ -9074,9 +9074,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   padding: 0px 10%;
   background-color: rgba(24, 24, 24, 0.8);
+  transition: all 0.4s;
 }
 #apartments-main .hidden-gal .gal {
-  width: 100%;
+  position: absolute;
+  width: 80%;
   height: 100%;
   background: url("../images/backgrounds/landing/bg30.jpg") no-repeat 50% 20%;
   -webkit-background-size: cover;
@@ -9103,19 +9105,32 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
   }
 }
+#apartments-main .hidden-gal .next {
+  opacity: 0;
+  z-index: 19;
+}
+#apartments-main .hidden-gal .current {
+  opacity: 1;
+  z-index: 20;
+}
 #apartments-main .hidden-gal .slider {
   position: fixed;
   top: 45%;
   cursor: pointer;
+  transition: all 0.3s;
+  padding: 2%;
 }
 #apartments-main .hidden-gal .slider i {
   font-size: 4.2em;
 }
+#apartments-main .hidden-gal .slider:hover {
+  color: #79b3c4;
+}
 #apartments-main .hidden-gal .slider-left {
-  left: 5%;
+  left: 3%;
 }
 #apartments-main .hidden-gal .slider-right {
-  right: 5%;
+  right: 3%;
 }
 
 #amenities-main {
