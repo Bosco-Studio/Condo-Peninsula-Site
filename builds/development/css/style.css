@@ -9126,6 +9126,22 @@ h1, h2, h3, h4, h5, h6 {
 #apartments-main .hidden-gal .slider:hover {
   color: #79b3c4;
 }
+#apartments-main .hidden-gal .closer {
+  color: #d0ad8a;
+  z-index: 21;
+  position: fixed;
+  top: 1%;
+  right: 5%;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 1%;
+}
+#apartments-main .hidden-gal .closer i {
+  font-size: 2.2em;
+}
+#apartments-main .hidden-gal .closer:hover {
+  color: #79b3c4;
+}
 #apartments-main .hidden-gal .slider-left {
   left: 3%;
 }
